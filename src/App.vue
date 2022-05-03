@@ -244,7 +244,7 @@ export default {
       // btnworld.className = "button btn-active";
     },
     loadData() {
-      axios.get("https://idealclover.cn/covidinfo.json").then((response) => {
+      axios.get("https://idealclover.cn/covidinfo.json?timestamp=" + Date.now()).then((response) => {
         let data = response.data;
         this.chinaData = data["china"];
         this.worldData = data["world"];
