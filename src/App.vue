@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <div>
       <div class="title">2022新冠实时疫情图</div>
       <div class="tab">
@@ -20,11 +20,11 @@
           <p style="color: rgb(247, 130, 7)">{{ chinaData.confirmedCount }}</p>
         </div>
         <div>
-          <p>累积死亡</p>
+          <p>死亡</p>
           <p style="color: rgb(93, 112, 146)">{{ chinaData.deadCount }}</p>
         </div>
         <div>
-          <p>累积治愈</p>
+          <p>治愈</p>
           <p style="color: rgb(40, 183, 163)">{{ chinaData.curedCount }}</p>
         </div>
       </div>
@@ -41,11 +41,11 @@
           <p style="color: rgb(247, 130, 7)">{{ worldData.confirmedCount }}</p>
         </div>
         <div>
-          <p>累积死亡</p>
+          <p>死亡</p>
           <p style="color: rgb(93, 112, 146)">{{ worldData.deadCount }}</p>
         </div>
         <div>
-          <p>累积治愈</p>
+          <p>治愈</p>
           <p style="color: rgb(40, 183, 163)">{{ worldData.curedCount }}</p>
         </div>
       </div>
@@ -53,7 +53,7 @@
     <div id="cnmap" class="map"></div>
     <div id="worldmap" class="map"></div>
     <div class="copyright">
-      <a target="_blank" href="https://www.ghpym.com/2020cnyqt.html"
+      <a target="_blank" href="https://idealclover.top"
         >调用地图</a
       >
     </div>
@@ -69,7 +69,6 @@ echarts.registerMap("world", world);
 import axios from "axios";
 
 export default {
-  name: "HelloWorld",
   props: {},
   data() {
     return {
@@ -288,14 +287,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-body {
-  height: 800px;
-  overflow: hidden;
-}
-
-*:focus {
-  outline: none;
-}
 
 #main {
   max-width: px;
@@ -344,11 +335,11 @@ a:focus {
 
 .map {
   position: relative;
-  height: 600px;
+  height: 380px;
 }
 
 #worldmap {
-  height: 580px;
+  height: 380px;
 }
 
 .copyright {
