@@ -53,7 +53,7 @@
     <div id="cnmap" class="map"></div>
     <div id="worldmap" class="map"></div>
     <div class="copyright">
-      <a target="_blank" href="https://idealclover.top/archives/634/"
+      <a target="_blank" href="https://idealclover.top/archives/632/"
         >调用地图</a
       >
     </div>
